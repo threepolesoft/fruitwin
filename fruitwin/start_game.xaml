@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fruitwin.start_game">
+    
+    <ContentPage.Content>
+
+        <Frame 
+            CornerRadius="10"
+            BackgroundColor="Wheat"
+            Margin="10"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Padding="0"
+            >
+
+            <RelativeLayout
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                >
+
+                <Grid
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                    >
+                    <StackLayout BackgroundColor="Wheat">
+
+                        <Label 
+                            x:Name="lb_task"
+                            Text="Task: 1/10"
+                            VerticalOptions="Start" 
+                            HorizontalOptions="Start" 
+                            FontSize="16"
+                            Margin="5"
+                            TextColor="Black"
+                            />
+
+                        <Image
+                            x:Name="img_wh_pic"
+                            Source="icon.jpg"
+                            Aspect="AspectFit"
+                            HeightRequest="180"
+                            WidthRequest="180"   
+                            />
+
+                        <Label 
+                            x:Name="lb_question"
+                            Text="What is this picture?"
+                            VerticalOptions="Start" 
+                            HorizontalOptions="Start" 
+                            FontSize="36"
+                            Margin="10"
+                            TextColor="Black"
+                            />
+
+                        <Frame IsClippedToBounds="True" Grid.Row="0" HasShadow="True" Padding="0" BackgroundColor="Wheat">
+
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Padding="5">
+                                <Button
+                                    x:Name="btn_value_1"
+                                    Text="45"
+                                    HorizontalOptions="Center"
+                                    CornerRadius="30"
+                                    BackgroundColor="Green"
+                                    TextColor="White"
+                                    FontSize="22"
+                                    />
+
+                                <Button
+                                    x:Name="btn_value_2"
+                                    Text="50"
+                                    HorizontalOptions="Center"
+                                    CornerRadius="30"
+                                    BackgroundColor="Green"
+                                    TextColor="White"
+                                    FontSize="22"
+                                    />
+                            </StackLayout>
+
+                        </Frame>
+
+
+                        <Frame IsClippedToBounds="True" Grid.Row="0" HasShadow="False" Padding="0" BackgroundColor="Wheat">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="5">
+                                
+                                <Label 
+                                    Text="Answer : "
+                                    VerticalOptions="Start" 
+                                    HorizontalOptions="Start" 
+                                    FontSize="26"
+                                    Margin="5"
+                                    TextColor="Black"
+                                    />
+
+                                <Label 
+                                    x:Name="lb_answer"
+                                    Text=""
+                                    VerticalOptions="Start" 
+                                    HorizontalOptions="Start" 
+                                    FontSize="26"
+                                    Margin="5"
+                                    TextColor="Black"
+                                    />
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame IsClippedToBounds="True" Grid.Row="0" HasShadow="False" Padding="0" BackgroundColor="Wheat">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="5">
+                                <Label 
+                                    Text="Score : "
+                                    VerticalOptions="Start" 
+                                    HorizontalOptions="Start" 
+                                    FontSize="26"
+                                    Margin="5"
+                                    TextColor="Black"
+                                    />
+
+                                <Label 
+                                    x:Name="lb_total_point"
+                                    Text="0"
+                                    VerticalOptions="Start" 
+                                    HorizontalOptions="Start" 
+                                    FontSize="26"
+                                    Margin="5"
+                                    TextColor="Black"
+                                    />
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame IsClippedToBounds="True" Grid.Row="0" HasShadow="False" Padding="0" BackgroundColor="Wheat">
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="5">
+
+                                <Button
+                                    x:Name="btn_close"
+                                    Text="Close"
+                                    HorizontalOptions="Center"
+                                    CornerRadius="10"
+                                    BackgroundColor="Red"
+                                    TextColor="White"
+                                    FontSize="26"
+                                    />
+
+                            </StackLayout>
+
+                        </Frame>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </RelativeLayout>
+        </Frame>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

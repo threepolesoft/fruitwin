@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fruitwin.MainPage"
+             BackgroundColor="ForestGreen"
+             >
+
+    <RelativeLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            >
+
+        <Grid
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+            >
+
+            <StackLayout
+                VerticalOptions="Start"
+                HorizontalOptions="Center"     
+                Margin="0, 60, 0, 0"
+                >
+                
+                <Label
+                    x:Name="lb_my_point"
+                    Text="My Score: 194"
+                    FontSize="47"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    TextColor="Wheat"
+                    />
+                
+            </StackLayout>
+            
+            <StackLayout
+                VerticalOptions="Center"
+                HorizontalOptions="Center" 
+                Margin="0, -60, 0, 0"
+                >
+
+                <ImageButton
+                    x:Name="btn_start_game"
+                    Source="start_game.png"
+                    Aspect="Fill"
+                    HeightRequest="230"
+                    WidthRequest="240"  
+                    CornerRadius="5"
+                    BackgroundColor="ForestGreen"
+                    />
+
+            </StackLayout>
+
+        </Grid>
+
+
+    </RelativeLayout>
+
+
+</ContentPage>

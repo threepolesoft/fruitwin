@@ -1,0 +1,27 @@
+﻿[
+	{
+		"q_item":["Apple", "Grapes"],
+		"q_ans": "Apple"
+	},
+
+	{
+		"q_item":["Banana", "Apple"],
+		"q_ans": "Banana"
+	},
+
+	{
+		"q_item":["Banana", "Orange"],
+		"q_ans": "Orange"
+	},
+
+	{
+		"q_item":["Mango", "Apple"],
+		"q_ans": "Mango"
+	},
+
+	{
+		"q_item":["Banana", "Grapes"],
+		"q_ans": "Grapes"
+	},
+
+]
